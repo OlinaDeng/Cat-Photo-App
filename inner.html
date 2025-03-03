@@ -1,23 +1,65 @@
 <!DOCTYPE html>
-<!-- saved from url=(0516)https://m.stripe.network/inner.html#url=https%3A%2F%2Fwww.freecodecamp.org%2Flearn%2F2022%2Fresponsive-web-design%2Flearn-html-by-building-a-cat-photo-app%2Fstep-71&title=Learn%20HTML%20by%20Building%20a%20Cat%20Photo%20App%3A%20Step%2071%20%7C%20freeCodeCamp.org&referrer=https%3A%2F%2Fwww.freecodecamp.org%2Flearn%2F2022%2Fresponsive-web-design%2Flearn-html-by-building-a-cat-photo-app%2Fstep-71&muid=c6dcb5a6-54ef-48f8-bf5a-fcb880812e2eba5e29&sid=c0114986-7fb2-4e53-bdc2-9c8955e4e2a4b84a42&version=6&preview=false -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>StripeM-Inner</title></head><body data-new-gr-c-s-check-loaded="14.1224.0" data-gr-ext-installed=""><script>!function(){var e=document.createElement("script");e.defer=!0,e.src="out-4.5.44.js",e.onload=function(){var e;window.StripeM&&(e=window.location.hash,/ping=false/.test(e)||(e=(e=e.match(/version=(4|6)/))?e[1]:"4",window.StripeM.p({t:!0,v:e})),e=function(e){if(window.opener||window.parent||window)try{var i=((t=JSON.parse(e.data)).message||t).action,t=t.message?t.message.payload:t;switch(i){case"ping":window.StripeM.p({t:!0,o:{muid:t.muid,sid:t.sid,referrer:t.referrer,url:t.url,title:t.title,v2:t.v2},v:t.version||"4"});break;case"track":if(!t.source||!t.data)return;window.StripeM.b({muid:t.muid,sid:t.sid,url:t.url,source:t.source,data:t.data},t.version||"4")}}catch(e){}},window.addEventListener?window.addEventListener("message",e,!1):window.attachEvent("onMessage",e))},document.body.appendChild(e)}()</script><script defer="" src="./out-4.5.44.js.download"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
-
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+<meta charset="utf-8">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
